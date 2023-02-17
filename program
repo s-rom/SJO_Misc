@@ -1,0 +1,21 @@
+#!/bin/bash
+
+sigintH()
+{
+	echo "Este programa no acaba con Ctrl+C"
+}
+
+sigtermH() 
+{
+	echo "He recibido la señal SIGTERM pero tampoco acabo"
+}
+
+
+trap sigintH SIGINT
+trap sigtermH SIGTERM
+
+for i in {1..10000}
+do
+	echo $i
+	sleep 1
+done
