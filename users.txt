@@ -1,0 +1,5 @@
+sergi,10
+julian,4
+miguel,3
+lucas,7
+dani,8
